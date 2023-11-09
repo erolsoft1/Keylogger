@@ -38,8 +38,8 @@ def mail_gonder(mesaj):
 	global toplama
 	server = smtplib.SMTP("smtp.gmail.com:587")
 	server.starttls()
-	server.login("socialmediasinan01@gmail.com", "Sosyal_Medya01")
-	server.sendmail("socialmediasinan01@gmail.com", "socialmediasinan01@gmail.com", mesaj)
+	server.login("mail", "password")
+	server.sendmail("mail", "mail", mesaj)
 	server.quit()
 	
 def dallanma():
